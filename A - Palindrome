@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x,last_digit,num=0;
+  cin>>x;
+  int temp =x;
+
+  while (x>0)
+  {
+
+  last_digit = x%10;
+  num = num*10 + last_digit;
+  x/=10;
+  }
+  
+  cout<<num<<endl;
+  
+  if (num == temp )
+    cout<<"YES";
+  else
+    cout<<"NO";
+    
+    return 0;
+}
