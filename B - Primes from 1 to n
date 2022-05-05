@@ -1,0 +1,27 @@
+# codeforces
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string x="yes";
+    int n;
+    cin>>n;
+
+    for (int i = 2; i<=n ; i++)
+    {
+        for (int j =2; j<i ; j++)
+        {
+            if (i%j ==0 ){
+                x="no";
+                break;
+            }
+             else
+                x= "yes";
+        }
+         if (x == "yes")
+            cout<<i<<" ";
+            }
+    
+    return 0;
+}
